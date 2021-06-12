@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Bart Piotrowski</Authors>
+    <Company>bartpio</Company>
+    <Copyright>(c) 2021 All Rights Reserved</Copyright>
+    <Description>A converter (for use with Newtonsoft Json.NET), that transplants properties from an inner root object, to an outer container object. The serialized JSON looks like that of the inner root object, but augmented with other properties found on the outer container object.</Description>
+    <Version>1.0.1</Version>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/bartpio/TransplantingJsonConverter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/bartpio/TransplantingJsonConverter</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="newtonsoft.json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>
